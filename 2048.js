@@ -71,21 +71,23 @@ function updateTile(tile,num){
     }
 
 }
-document.addEventListener("swiped-left",(e)=>{
-    slideLeft();
-    setTwo();
-})
-document.addEventListener("swiped-right",(e)=>{
-    slideRight();
-    setTwo();
-})
-document.addEventListener("swiped-up",(e)=>{
-    slideUp();
-    setTwo();
-})
-document.addEventListener("swiped-Down",(e)=>{
-    slideDown();
-    setTwo();
+document.addEventListener("swiped",(e)=>{
+    if(e.code=="swiped-left"){
+        slideLeft();
+        setTwo();
+    }
+    else if(e.code=="swiped-right"){
+        slideRight();
+        setTwo();
+    }
+    else if(e.code=="swiped-up"){
+        slideUp();
+        setTwo();
+    }
+    else if(e.code=="swiped-down"){
+        slideDown();
+        setTwo();
+    }
 })
 
 document.addEventListener("keyup",(e)=>{
