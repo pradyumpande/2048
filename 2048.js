@@ -71,24 +71,28 @@ function updateTile(tile,num){
     }
 
 }
-document.addEventListener("swiped",(e)=>{
-    if(e.code=="swiped-left"){
-        slideLeft();
+document.addEventListener('swiped-left', function(e) {
+    slideLeft();
         setTwo();
-    }
-    else if(e.code=="swiped-right"){
-        slideRight();
+  });
+  // swiped-right
+  document.addEventListener('swiped-right', function(e) {
+    // ...
+    slideRight();
         setTwo();
-    }
-    else if(e.code=="swiped-up"){
-        slideUp();
+  });
+  // swiped-up
+  document.addEventListener('swiped-up', function(e) {
+    // ...
+    slideUp();
         setTwo();
-    }
-    else if(e.code=="swiped-down"){
-        slideDown();
+  });
+  // swiped-down
+  document.addEventListener('swiped-down', function(e) {
+    // ...
+    slideDown();
         setTwo();
-    }
-})
+  });
 
 document.addEventListener("keyup",(e)=>{
     if(e.code=="ArrowLeft"){
