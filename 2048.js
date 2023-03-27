@@ -71,6 +71,22 @@ function updateTile(tile,num){
     }
 
 }
+document.addEventListener("swiped-left",(e)=>{
+    slideLeft();
+    setTwo();
+})
+document.addEventListener("swiped-right",(e)=>{
+    slideRight();
+    setTwo();
+})
+document.addEventListener("swiped-up",(e)=>{
+    slideUp();
+    setTwo();
+})
+document.addEventListener("swiped-Down",(e)=>{
+    slideDown();
+    setTwo();
+})
 
 document.addEventListener("keyup",(e)=>{
     if(e.code=="ArrowLeft"){
